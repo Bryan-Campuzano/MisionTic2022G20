@@ -3,6 +3,7 @@
 #   este proceso de aprendizaje lo hacemos entre todos
 
 #------------------------ZONA DE CÓDIGO------------------------
+#------------------------CODIGO EN PROCESO------------------------
 
 """ este algoritmo principal busca determinar: 
     
