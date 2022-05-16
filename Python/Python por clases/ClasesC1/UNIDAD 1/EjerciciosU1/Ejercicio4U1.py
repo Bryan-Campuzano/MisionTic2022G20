@@ -3,7 +3,6 @@
 #   este proceso de aprendizaje lo hacemos entre todos
 
 #------------------------ZONA DE CÓDIGO------------------------
-#------------------------CODIGO EN PROCESO------------------------
 
 """ este algoritmo principal busca determinar: 
     
@@ -44,119 +43,81 @@ b     = "entre100Y1M"   # rango salarial entre 600.000 COP y 1.000.000 COP
 c     = "masDe1M"       # rango salarial de mas de 1.000.000 COP
 
 #   listado de las edades de los trabajadores de la empresa
-edadesTrabajadores = {
-    0 : 21,
-    1 : 22,
-    2 : 23,
-    3 : 24,
-    4 : 25,
-    5 : 31,
-    6 : 32,
-    7 : 33,
-    8 : 34,
-    9 : 35,
-    10 :41,
-    11 :42,
-    12 :43,
-    13 :44,
-    14 :45,
-    15 :51,
-    16 :52,
-    17 :53,
-    18 :54,
-    19 :55
+trabajadores = {
+    0:[21,soltero,mujer ,a],
+    1:[22,casado ,mujer ,a],
+    2:[23,soltero,mujer ,c],
+    3:[24,casado ,hombre,c],
+    4:[25,soltero,mujer ,b],
+    5:[31,casado ,mujer ,b],
+    6:[32,soltero,hombre,c],
+    7:[33,casado ,hombre,a],
+    8:[34,soltero,mujer ,b],
+    9:[35,casado ,mujer ,c],
+    10:[41,casado ,mujer ,a],
+    11:[42,soltero,hombre,c],
+    12:[43,casado ,hombre,c],
+    13:[44,soltero,mujer ,a],
+    14:[45,viudo  ,hombre,b],
+    15:[51,soltero,hombre,b],
+    16:[52,soltero,mujer ,a],
+    17:[53,viudo  ,mujer ,b],
+    18:[54,soltero,mujer ,b],
+    19:[55,viudo  ,hombre,b]
 }
-
-#   listado de los estados civiles de los trabajadores de la empresa
-civilTrabajadores = {
-    0 : soltero,
-    1 : casado,
-    2 : soltero,
-    3 : casado,
-    4 : soltero,
-    5 : casado,
-    6 : soltero,
-    7 : casado,
-    8 : soltero,
-    9 : casado,
-    10 :casado,
-    11 :soltero,
-    12 :casado,
-    13 :soltero,
-    14 :viudo,
-    15 :soltero,
-    16 :soltero,
-    17 :viudo,
-    18 :soltero,
-    19 :viudo   
-}
-#   listado del genero de los trabajadores de la empresa
-sexoTrabajadores = {
-    "0" : mujer,
-    "1" : mujer,
-    "2" : mujer,
-    "3" : hombre,
-    "4" : mujer,
-    "5" : mujer,
-    "6" : hombre,
-    "7" : hombre,
-    "8" : mujer,
-    "9" : mujer,
-    "10" :mujer,
-    "11" :hombre,
-    "12" :hombre,
-    "13" :mujer,
-    "14" :hombre,
-    "15" :hombre,
-    "16" :mujer,
-    "17" :mujer,
-    "18" :mujer,
-    "19" :hombre   
-}
-#   listado de los rangos salariales de los trabajadores de la empresa
-sueldoTrabajadores = {
-    "0" : a,
-    "1" : a,
-    "2" : c,
-    "3" : c,
-    "4" : b,
-    "5" : b,
-    "6" : c,
-    "7" : a,
-    "8" : b,
-    "9" : c,
-    "10" :a,
-    "11" :c,
-    "12" :c,
-    "13" :a,
-    "14" :b,
-    "15" :b,
-    "16" :a,
-    "17" :b,
-    "18" :b,
-    "19" :b    
-}
-
 #   funciones necesarias para la solución
 """ esta funcion retorna la cantidad de mujeres que trabajan en la empresa
 """
-def totalMujeres (sexoTrabajadores): 
+def totalMujeres (trabajadores): 
     temp = 0
-    for i in sexoTrabajadores:
-        if sexoTrabajadores [i] == mujer:
+    temp2 = "no hay empleados con estas características"
+    for i in trabajadores:
+        if trabajadores [i][2] == mujer:
             temp += 1
-    return temp
+            temp2 = f"el total de mujeres en la empresa es de: {temp}"
+    return temp2
 
-def mayores30 (): 
+""" esta funcion retorna la cantidad de hombres, casados y que ganan mas de 1.000.000 COP que trabajan en la empresa
+"""
+def totalHombresCasadosC (trabajadores): 
     temp = 0
-    for i in edadesTrabajadores:
-        if edadesTrabajadores[i] >= 30:
-            temp + 1
-    return temp
-       
+    temp2 = "no hay empleados con estas características"
+    for i in trabajadores:
+        if trabajadores [i][2] == hombre and trabajadores [i][1] == casado and trabajadores [i][3] == c:
+            temp += 1
+            temp2 = f"el numero total de hombres casados que ganan mas de 1.000.000 COP mensual es de: {temp}"
+    return temp2
+
+""" esta funcion retorna la cantidad de mujeres, viudas y que ganan ,mas de 600.000 COP que trabajan en la empresa
+"""
+def totalMujeresViudasByC (trabajadores): 
+    temp = 0
+    temp2 = "no hay empleados con estas características"
+    for i in trabajadores:
+        if trabajadores [i][2] == mujer and trabajadores [i][1] == viudo and trabajadores [i][3] != a:
+            temp += 1
+            temp2 = f"el numero total de mujeres viudas que ganan mas de 600.000 COP mensual es de: {temp}"
+    return temp2
+
+""" esta funcion retorna la edad promedio de los trabajadores hombres de la fabrica
+"""     
+def promedioEdadHombres (trabajadores): 
+    temp0 = 0
+    temp1 = 0
+    prom  = 0.0
+    temp2 = "no hay empleados con estas características"
+    for i in trabajadores:
+        if trabajadores [i][2] == hombre :
+            temp0 += 1
+            temp1 += trabajadores [i][0]
+            prom = temp1/temp0
+            temp2 = f"la edad promedio de los hombres de la fabrica es de: {prom}"
+    return temp2
+
 #-------------------------ZONA DE TEST-------------------------
-print(totalMujeres(sexoTrabajadores))
-print("la cantidad de mujeres en la empresa es: ",mayores30())
+print(totalMujeres(trabajadores))
+print(totalHombresCasadosC(trabajadores))
+print(totalMujeresViudasByC(trabajadores))
+print(promedioEdadHombres(trabajadores))
 
-
-#appEnd
+#   appEnd
