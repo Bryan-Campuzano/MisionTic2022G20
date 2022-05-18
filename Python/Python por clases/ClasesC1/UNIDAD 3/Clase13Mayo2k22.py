@@ -1,4 +1,4 @@
-""" realizar un programa que que lea el código numérico de un producto como llave de un 
+""" realizar un programa que lea el código numérico de un producto como llave de un 
     diccionario y en dicha llave va a almacenar nombre, precio y cantidad 
     del producto en una lista
     

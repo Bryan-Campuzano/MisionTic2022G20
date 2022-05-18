@@ -99,7 +99,7 @@ datosPersonales = ['Carlos', 40, True]                  # no hay que guardar sus
 print(MarcasCarros)                                     # puede contener valores de diferentes tipos, cadenas, enteros etc
 print(datosPersonales)
 
-frutas = list(('manzana','pera','fresa'))               #contienen posiciones especificas para cada elemento
+frutas = list(('manzana','pera','fresa'))               # contienen posiciones especificas para cada elemento
 print(frutas)
 frutas[2]='piña'                                        # reemplaza el elemento en la posición 2, iniciando el conteo desde cero
 print(frutas)
