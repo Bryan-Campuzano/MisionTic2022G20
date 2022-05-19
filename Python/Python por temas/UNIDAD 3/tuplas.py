@@ -33,5 +33,6 @@ a = operaciones(4,2)
 print(type(a))
 
 dulces = tuple((1258,2))
+print(dulces[0])
 print(dulces)
 print(type(dulces))
