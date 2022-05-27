@@ -1,6 +1,6 @@
 """ introducción a operadores lógicos 
 """
-#   las tablas de verdad de los operadores entrega el valor de verdad de una operacion lógica evaluando el valor
+#   las tablas de verdad de los operadores entrega el valor de verdad de una operación lógica evaluando el valor
 #   de las variables de entrada
 #
 #   OPERADOR AND
@@ -19,7 +19,7 @@
 #   A y B indican las variables y R indica el resultado, ejemplo el primer resultado del operador and indica
 # 
 """
-    Realizar un programa que indique si una persona debe presentar la declacion de renta. 
+    Realizar un programa que indique si una persona debe presentar la declaración de renta. 
     Las condiciones para presentar este impuesto son:
 
     * Ser mayor de edad 
@@ -39,7 +39,7 @@ else:
     
 #   SOLUCIÓN B
 edadB = int(input("indique su edad: "))
-if edadB > 17: #usamos mayor estricto porque al tratarse de enteros positivos, el numero mayor mínimo que cumple la condición es 18, que indica mayoria de edad
+if edadB > 17: #usamos mayor estricto porque al tratarse de enteros positivos, el numero mayor mínimo que cumple la condición es 18, que indica mayoría de edad
     ingresosPM = int((input("indique sus ingresos mensuales sin puntos ni comas: ")))#estructura condicional anidada, se tienen que cumplir ambas condiciones para dar una respuesta afirmativa
     if ingresosPM * 12 >= 50831000:
         print("usted SI debe presentar la declaración de la renta")
@@ -72,7 +72,7 @@ else:
 #   Una función puede definir opcionalmente parámetros de entrada que permiten a los llamadores pasar argumentos a la función
 #   Una función también puede devolver un valor como salida
 #
-#   los micro-códigos hechos en anteriores clases se pueden conciderar como funciones, mas sin embargo, en programación se
+#   los micro-códigos hechos en anteriores clases se pueden considerar como funciones, mas sin embargo, en programación se
 #   tienen que definir como tal, para permitirle al programador y al programa el "llamar" a estas funciones de manera
 #   independiente sin necesidad de ejecutar todo el código, y volver a usar piezas de código en otros sectores
 #
@@ -83,7 +83,7 @@ def saludo():
 
 saludo() 
 
-def suma (num1,num2): #las funciones pueden tener parametros, estos son valores de inicio dados por el usuario o por otras funciones que la funcion actual requiere para hacer su tarea
+def suma (num1,num2): #las funciones pueden tener parámetros, estos son valores de inicio dados por el usuario o por otras funciones que la función actual requiere para hacer su tarea
     return num1+num2
 
 suma(15,20)

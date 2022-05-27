@@ -1,5 +1,5 @@
 #   NOTA: la realización de estas soluciones corre por cuenta de un estudiante, si conoces mejores soluciones a este 
-#   problema o encuentras algún fallo importante, sientete libre de contactarte conmigo
+#   problema o encuentras algún fallo importante, siéntete libre de contactarte conmigo
 #   este proceso de aprendizaje lo hacemos entre todos
 
 #------------------------ZONA DE CÓDIGO------------------------
@@ -66,7 +66,7 @@ trabajadores = {
     19:[55,viudo  ,hombre,b]
 }
 #   funciones necesarias para la solución
-""" esta funcion retorna la cantidad de mujeres que trabajan en la empresa
+""" esta función retorna la cantidad de mujeres que trabajan en la empresa
 """
 def totalMujeres (trabajadores): 
     temp = 0
@@ -77,7 +77,7 @@ def totalMujeres (trabajadores):
             temp2 = f"el total de mujeres en la empresa es de: {temp}"
     return temp2
 
-""" esta funcion retorna la cantidad de hombres, casados y que ganan mas de 1.000.000 COP que trabajan en la empresa
+""" esta función retorna la cantidad de hombres, casados y que ganan mas de 1.000.000 COP que trabajan en la empresa
 """
 def totalHombresCasadosC (trabajadores): 
     temp = 0
@@ -88,7 +88,7 @@ def totalHombresCasadosC (trabajadores):
             temp2 = f"el numero total de hombres casados que ganan mas de 1.000.000 COP mensual es de: {temp}"
     return temp2
 
-""" esta funcion retorna la cantidad de mujeres, viudas y que ganan ,mas de 600.000 COP que trabajan en la empresa
+""" esta función retorna la cantidad de mujeres, viudas y que ganan ,mas de 600.000 COP que trabajan en la empresa
 """
 def totalMujeresViudasByC (trabajadores): 
     temp = 0
@@ -99,7 +99,7 @@ def totalMujeresViudasByC (trabajadores):
             temp2 = f"el numero total de mujeres viudas que ganan mas de 600.000 COP mensual es de: {temp}"
     return temp2
 
-""" esta funcion retorna la edad promedio de los trabajadores hombres de la fabrica
+""" esta función retorna la edad promedio de los trabajadores hombres de la fabrica
 """     
 def promedioEdadHombres (trabajadores): 
     temp0 = 0

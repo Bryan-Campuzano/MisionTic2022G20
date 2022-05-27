@@ -1,13 +1,13 @@
-""" continuacion de la explicación de diccionarios python
+""" continuación de la explicación de diccionarios python
 """
 #   agregando llaves a diccionarios
 CantidadEst={}                          # crea un diccionario vació
 print(CantidadEst)                      # retorna una llave vacía
-CantidadEst.setdefault('Grado 1', 85)   # agrega al diccionario un parametro llamado "grado 1" y tiene 85 estudiantes
+CantidadEst.setdefault('Grado 1', 85)   # agrega al diccionario un parámetro llamado "grado 1" y tiene 85 estudiantes
 print(CantidadEst)                      # retorna un diccionario con un elemento
-CantidadEst.setdefault('Grado 2',65)    # agrega al diccionario un parametro llamado "grado 2" y tiene 65 estudiantes
+CantidadEst.setdefault('Grado 2',65)    # agrega al diccionario un parámetro llamado "grado 2" y tiene 65 estudiantes
 print(CantidadEst)                      # retorna un diccionario con dos elemento
-CantidadEst['Grado 3']=63               # agrega al diccionario un parametro llamado "grado 3" y tiene 63 estudiantes
+CantidadEst['Grado 3']=63               # agrega al diccionario un parámetro llamado "grado 3" y tiene 63 estudiantes
 print (CantidadEst)                     # retorna un diccionario con tres elemento
 
 """Formas de obtener el valor de una llave
@@ -83,19 +83,19 @@ sexoTrabajadores = {    # registro de genero de los 20 empleados de la empresa
     "18" :mujer,
     "19" :hombre   
 } 
-def totalMujeres (sexoTrabajadores):        # NOTA: el error en el codigo original era que, para que esta funcion de recorrido 
-    temp = 0                                # funcione, se debía pasar el diccionario a recorrer como parametro de entrada, esto para saber a que 
+def totalMujeres (sexoTrabajadores):        # NOTA: el error en el codigo original era que, para que esta función de recorrido 
+    temp = 0                                # funcione, se debía pasar el diccionario a recorrer como parámetro de entrada, esto para saber a que 
     for i in sexoTrabajadores:              # diccionario tiene que aplicarse el recorrido
         if sexoTrabajadores[i] == mujer:
             temp += 1
     return temp
 
-print(totalMujeres(sexoTrabajadores))       # al momento de la funcion necesitar un parametro de entrada, es necesario introducir el diccionario como
-                                            # sexoTrabajadores como parametro al momento de llamar a la funcion
+print(totalMujeres(sexoTrabajadores))       # al momento de la función necesitar un parámetro de entrada, es necesario introducir el diccionario como
+                                            # sexoTrabajadores como parámetro al momento de llamar a la función
 """ introducción a las listas
 """
-MarcasCarros = ['Audi','Chevrolet','Renault','Toyota']  # a diferencia de los diccionarios, la notacion de las listas se hace con "[]" en vez de corchetes
-datosPersonales = ['Carlos', 40, True]                  # no hay que guardar sus elementos dentro de keys o parametros, solo se guardan los valores a usar
+MarcasCarros = ['Audi','Chevrolet','Renault','Toyota']  # a diferencia de los diccionarios, la notación de las listas se hace con "[]" en vez de corchetes
+datosPersonales = ['Carlos', 40, True]                  # no hay que guardar sus elementos dentro de keys o parámetros, solo se guardan los valores a usar
 print(MarcasCarros)                                     # puede contener valores de diferentes tipos, cadenas, enteros etc
 print(datosPersonales)
 

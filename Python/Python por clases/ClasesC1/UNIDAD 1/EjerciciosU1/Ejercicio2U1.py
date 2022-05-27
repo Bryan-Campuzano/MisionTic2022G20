@@ -1,10 +1,10 @@
 #   NOTA: la realización de estas soluciones corre por cuenta de un estudiante, si conoces mejores soluciones a este 
-#   problema o encuentras algún fallo importante, sientete libre de contactarte conmigo
+#   problema o encuentras algún fallo importante, siéntete libre de contactarte conmigo
 #   este proceso de aprendizaje lo hacemos entre todos
 
 #------------------------ZONA DE CÓDIGO------------------------
 
-""" Funcion que recibe un numero determina si este es primo o no
+""" Función que recibe un numero determina si este es primo o no
 """
 def esPrimo(num):
     estado = True

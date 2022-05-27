@@ -1,9 +1,9 @@
 """ introducción a los conjuntos
 """
-#   los conjuntos son colecciones de datos en las cuales se almacenanvarios elementos
+#   los conjuntos son colecciones de datos en las cuales se almacenan varios elementos
 #   no están ordenados, son inmutables y no permiten valores duplicados
 
-conjunto = {'Cali','Barranquilla','Bucaramanga'}    # la notacion de los conjuntos es similar a la de los diccionarios, pero sin parametros, se almacenan unicamente los valores
+conjunto = {'Cali','Barranquilla','Bucaramanga'}    # la notación de los conjuntos es similar a la de los diccionarios, pero sin parámetros, se almacenan unicamente los valores
 print(type(conjunto))                               # esto imprime en consola el mensaje "<class 'set'>" que indica que es un conjunto
 print(conjunto)
 
@@ -14,7 +14,7 @@ conjunto3 = {3,5.0,True,'Carlos',[1,2,3]}           # puede almacenar elementos 
 print(conjunto3)                                    # retorna un error de "unhashable type: list" que indica que es un elemento incompatible con los conjuntos
 
 conjunto4 = set((3,7,(9,8,7)))                      # en este caso si que retorna todos los elementos pues las tuplas son inmutables
-print(conjunto4)                                    # para asignarle directamente el valor de "set" a un grupo de elementos, en vez de los corchetes, se usa doble parentesis
+print(conjunto4)                                    # para asignarle directamente el valor de "set" a un grupo de elementos, en vez de los corchetes, se usa doble paréntesis
 
 conjunto3.add('Pedro')                              # se pueden añadir y quitar elementos
 conjunto3.remove(5.0)                               # retorna el conjunto modificado
@@ -26,7 +26,7 @@ carbohidratosProc ={'Harina de trigo','Pasta','pan'}
 """     operadores de conjuntos:
 
         | representa union
-        & representa interseccion
+        & representa intersección
         - representa Diferencia
         ^ representa diferencia simétrica
 """
@@ -36,7 +36,7 @@ print(carbohidratosProc&carbohidratosNat)
 print(carbohidratosProc-carbohidratosNat)
 print(carbohidratosProc^carbohidratosNat)
 print('---------------funciones------------------')
-print(carbohidratosProc.union(carbohidratosNat))    # también existen estas operaciones básicas en su forma de funcion en la clase de conjuntos "set"
+print(carbohidratosProc.union(carbohidratosNat))    # también existen estas operaciones básicas en su forma de función en la clase de conjuntos "set"
 print(carbohidratosProc.intersection(carbohidratosNat))
 print(carbohidratosProc.difference(carbohidratosNat))
 print(carbohidratosProc.symmetric_difference(carbohidratosNat))

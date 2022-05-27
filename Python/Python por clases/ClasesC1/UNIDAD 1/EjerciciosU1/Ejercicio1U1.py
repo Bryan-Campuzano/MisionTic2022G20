@@ -1,11 +1,11 @@
 
 #   NOTA: la realización de estas soluciones corre por cuenta de un estudiante, si conoces mejores soluciones a este 
-#   problema o encuentras algún fallo importante, sientete libre de contactarte conmigo
+#   problema o encuentras algún fallo importante, siéntete libre de contactarte conmigo
 #   este proceso de aprendizaje lo hacemos entre todos
 
 #------------------------ZONA DE CÓDIGO------------------------
 
-""" Funcion que recibe 4 números y determina cual es el mayor de estos 
+""" Función que recibe 4 números y determina cual es el mayor de estos 
 """
 def numMayor(n1 : int,n2 : int,n3 : int,n4 : int): 
     numeroMayor = 0

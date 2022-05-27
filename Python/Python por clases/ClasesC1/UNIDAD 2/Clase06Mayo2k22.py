@@ -1,9 +1,9 @@
 """ profundización en temas vistos anteriormente
 """
-""" esta funcion evalúa cual es el numero mayor de una lista de números dados por el usuario
+""" esta función evalúa cual es el numero mayor de una lista de números dados por el usuario
 """
-cantidadNum= int(input("Digite la cantidad de números que va a ingresar: \n")) #la expresion \n es sencillamente un salto de linea, en vez de solicitar el numero en la misma linea, lo hace en una linea mas abajo, es como presionar la tecla enter
-for i in range(1, cantidadNum + 1):                                            #ciclo que comienza desde el primer elemento y finaliza en cantidadNum+1, esto es porque el conteo de un for inicia normalmente en cero, entonces el indicador del formulario f"ingrese el numero {i}\n" iniciaria de la forma "ingrese el numero 0" es meramente estético
+cantidadNum= int(input("Digite la cantidad de números que va a ingresar: \n")) #la expresión \n es sencillamente un salto de linea, en vez de solicitar el numero en la misma linea, lo hace en una linea mas abajo, es como presionar la tecla enter
+for i in range(1, cantidadNum + 1):                                            #ciclo que comienza desde el primer elemento y finaliza en cantidadNum+1, esto es porque el conteo de un for inicia normalmente en cero, entonces el indicador del formulario f"ingrese el numero {i}\n" iniciaría de la forma "ingrese el numero 0" es meramente estético
    numero = int (input(f"ingrese el numero {i}\n"))                            #NOTA: el rango puede iniciar del numero que se quiera, y terminar en cualquier numero posterior, solo hay que tener en cuenta el tamaño del conteo, si queremos 5 iteraciones, podemos ir de 0 a 4, de 1 a 5, de 2 a 6 etc. esto para evitar tener iteraciones insuficientes o innecesarias
    if i==1:
        mayor = numero
@@ -11,9 +11,9 @@ for i in range(1, cantidadNum + 1):                                            #
             mayor= numero
 print(f"El mayor de los {cantidadNum} números ingresados es {mayor}")
 
-""" esta funcion evalúa cual es el numero menor de una lista de números dados por el usuario
+""" esta función evalúa cual es el numero menor de una lista de números dados por el usuario
 """
-#cambia la condición de evaluación, el nombre de ciertas variables y el string de salida, de resto es una funcion muy similar
+#cambia la condición de evaluación, el nombre de ciertas variables y el string de salida, de resto es una función muy similar
 cantidadNum2= int(input("Digite la cantidad de números que va a ingresar: \n"))
 for i in range(1, cantidadNum2 + 1):
     numero2 = int (input(f"ingrese el numero {i}\n"))
@@ -23,9 +23,9 @@ for i in range(1, cantidadNum2 + 1):
             menor= numero2
 print(f"El menor de los {cantidadNum2} números ingresados es {menor}")
 
-""" esta funcion evalúa cual es el numero menor y mayor de una lista de números dados por el usuario
+""" esta función evalúa cual es el numero menor y mayor de una lista de números dados por el usuario
 """
-cantidadNum3 = int(input("Digite la cantidad de números que va a ingresar: \n")) #el cambio del nombre de las variables es solo para evitar que la funcion actual tome las variables temporales declaradas en funciones anteriores y las use en esta funcion
+cantidadNum3 = int(input("Digite la cantidad de números que va a ingresar: \n")) #el cambio del nombre de las variables es solo para evitar que la función actual tome las variables temporales declaradas en funciones anteriores y las use en esta función
 for i in range(1, cantidadNum3 + 1):
     numero3 = int(input(f"ingrese el numero {i}\n"))
     if i==1:
@@ -72,12 +72,12 @@ def hipotenusa (a,b):
     return h
 print(hipotenusa(4,5))
 
-""" funcion para la profundización en cadenas
+""" función para la profundización en cadenas
 """
 animal = "cocodrilo"
 print(animal[2])     #retorna la letra ubicada en la posición 2 de la cadena, como siempre, iniciando la cuenta desde cero 
 
-print(animal[-2])    #también se puede solicitar una posición negativa que no es mas que recorrer de derecha a izquierda la cadena empezando desde la posición 0, en este caso saltando a la "o final" y despues a la ultima "l"
+print(animal[-2])    #también se puede solicitar una posición negativa que no es mas que recorrer de derecha a izquierda la cadena empezando desde la posición 0, en este caso saltando a la "o final" y después a la ultima "l"
 
 print(animal[0:3])   #en este caso podemos retornar fragmentos de la cadena mas grandes, por ejemplo de 3 letras especificas
 
@@ -93,12 +93,12 @@ for i in range(len(animal)):
     print(animal[i])    #recorre la cadena, e imprime letra por letra en consola
     
 for i in animal:
-    print(i)            #en esta version de la misma funcion de recorrido, python se encarga de saber que quiero recorrer elemento por elemento la cadena, sino que me retornará cada letra como un string aparte
+    print(i)            #en esta version de la misma función de recorrido, python se encarga de saber que quiero recorrer elemento por elemento la cadena, sino que me retornará cada letra como un string aparte
 
-""" funcion para la profundización del try/except
+""" función para la profundización del try/except
 """
 try:
-    numero = int(input("Digite un numero")) #usado mas comúnmente para tipificar errores y sus posibles soluciones, tenemos la alternativa del try/except, un condicional que "trata" de realizar una accion, si esta no se realiza, ejecuta una serie de excepciones como respuesta
+    numero = int(input("Digite un numero")) #usado mas comúnmente para tipificar errores y sus posibles soluciones, tenemos la alternativa del try/except, un condicional que "trata" de realizar una acción, si esta no se realiza, ejecuta una serie de excepciones como respuesta
     print(numero)
 except:
     print("Digite un numero por favor!!!")

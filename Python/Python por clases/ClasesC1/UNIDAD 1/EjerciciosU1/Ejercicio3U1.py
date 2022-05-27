@@ -1,17 +1,17 @@
 #   NOTA: la realización de estas soluciones corre por cuenta de un estudiante, si conoces mejores soluciones a este 
-#   problema o encuentras algún fallo importante, sientete libre de contactarte conmigo
+#   problema o encuentras algún fallo importante, siéntete libre de contactarte conmigo
 #   este proceso de aprendizaje lo hacemos entre todos
 
 #------------------------ZONA DE CÓDIGO------------------------
 
 #   EJERCICIO 3 PROBLEMA A
-""" Funcion que calcula la superficie de un triangulo 
+""" Función que calcula la superficie de un triangulo 
 """
 def areaTriangulo(b,h):
     areaA = (h * b) / 2
     return areaA
 #   EJERCICIO 3 PROBLEMA B
-""" Funcion que calcula el area de un circulo
+""" Función que calcula el area de un circulo
 """
 import numpy #importa la clase numpy para usar el valor de pi que esta definida en esta
 def areaCirculo(radioB):
@@ -19,14 +19,14 @@ def areaCirculo(radioB):
     return areaB
 
 #   EJERCICIO 3 PROBLEMA C
-""" Funcion que calcula la base de un triángulo, teniendo la superficie y la altura
+""" Función que calcula la base de un triángulo, teniendo la superficie y la altura
 """
 def baseTriangulo (areaC,h):
     baseC = (areaC * 2) / h
     return baseC
 
 #   EJERCICIO 3 PROBLEMA D  
-""" Funcion que calcula el radio de un círculo, teniendo el área
+""" Función que calcula el radio de un círculo, teniendo el área
 """
 def radioCirculo (areaD):
     radioD = (areaD/numpy.pi) ** (1/2)
