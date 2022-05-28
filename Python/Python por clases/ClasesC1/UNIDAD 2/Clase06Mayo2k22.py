@@ -73,6 +73,8 @@ def hipotenusa (a,b):
 print(hipotenusa(4,5))
 
 """ función para la profundización en cadenas
+        ejemplo ilustrado sobre los indices de una cadena, buscar el elemento 'cadenas.png' en la carpeta 'Extras' o 
+        en la unidad 3 de 'python por temas'
 """
 animal = "cocodrilo"
 print(animal[2])     #retorna la letra ubicada en la posición 2 de la cadena, como siempre, iniciando la cuenta desde cero 
