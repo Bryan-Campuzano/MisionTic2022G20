@@ -14,7 +14,10 @@ print (CantidadEst)                     # retorna un diccionario con tres elemen
 """
 print(CantidadEst.get('Grado 1'), CantidadEst.setdefault('Grado 1'),CantidadEst['Grado 1'])
 
-"""bosquejo solución del reto 2
+"""bosquejo solución del reto 2 
+
+    ACLARACIÓN: este esquema fue proporcionado en clase y por consiguiente no hacen parte de ninguna intención de copia o plagio
+    y su inclusion dentro de los apuntes de apoyo son meramente académicos, habiendo terminado ya la entrega de este reto a fecha de 1 de junio de 2022
 """
 def cliente(informacion:dict)->dict:
     

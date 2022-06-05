@@ -107,7 +107,38 @@ print(suma2(a=3,b=14,c=79))
     para la creación, manipulación y demás operaciones dentro de las matrices vamos a importar la librería numpy
     las librerías son colecciones enteras de codigo, con funciones, test y documentación, que podemos usar en nuestros proyectos
 """
+import numpy as np      # importa las propiedades de numpy y las asigna a un elemento np
 
-
+mat = np.array([4,8,2]) # aunque la notación interna del array o 'arreglo' en español es una lista, al imprimir el
+print(mat)              # tipo de este elemento, nos regresa 'numpy.ndarray' diciéndonos que es un elemento array 
+print(type(mat))
+print(mat.shape)        # esta función nos retornas las dimensiones de la matriz al que se le aplica, en este caso nos retorna '(3,)' pues es una matriz de 3 columnas y una fila
+print(mat[1])           # retorna el valor de la matriz en la posición 1, empezando la cuenta desde cero, como es de costumbre
+mat[1] = 20             # reasigna el valor de la matriz en pa posición 1 a 20
+print(mat)              # vemos el cambio de la matriz efectuado
+print('---------------separador-------------------')
+mat2 = np.array([[5,8,7],[3,5,9]])
+print(mat2)
+print(type(mat2))
+print(mat2.shape)       # retorna las dimensiones de la matriz, en este caso retorna (2,3) primero el numero de filas y después el numero de columnas
+print(mat2[0][2])       # retorna el valor de la primera lista en su posición 2, en otras palabras, el valor de la matriz en la posición (1,3)
+mat2[0][0] = 1582       # reasigna el valor en la posición (0,0)
+print(mat2)             # visualizamos los cambios
+print('---------------separador-------------------')
+print('\n')             # imprimimos un salto de renglón
+mat3 = np.array([[[8,9,5,7],[6,8,4,4],[6,1,2,6]],[[8,2,5,1],[9,9,4,0],[2,2,1,2]],[[8,2,5,1],[9,9,4,0],[2,2,1,2]]],) # se pueden introducir varias matrices 
+print(mat3)
+print(mat3.shape)       # nos indica las dimensiones de las matrices almacenadas en el array, estas tienen que ser de las mismas dimensiones para ser almacenadas juntas
+mat3[1,2,2]=5000047     # nos retorna '(3, 3, 4)' que indica, cantidad de matrices, filas de estas y columnas de estas en ese orden, la cantidad de matrices se conoce también como 'fondo' o 'profundidad'
+print(mat3)             # en este caso el fondo es 3 porque hay tres matrices ordenadas por capas, similar a fichas de domino, o la tercera dimension de un cubo, ejemplo ilustrado en la carpeta 'extras'
+print('---------------separador-------------------')
+mat4 = np.array([[1,2],[2,3]])
+mat5 = np.array([[1,2],[2,3]])
+mat6 = mat4 + mat5      # aquí realizamos una suma de matrices, igual que en algebra lineal, la suma de elementos de matrices se realiza por coordenadas o posiciones
+print(mat4)             # sumando el valor de la casilla (0,0) de mat 4 con la casilla de coordenadas (0,0) de mat 5, asi, con todos los demás valores de ambas matrices
+print(mat5)             # dando como resultado una nueva matriz con las mismas dimensiones de las matrices sumando (tienen que ser de iguales dimensiones para poder ser sumadas) con todos los valores resultados
+print(mat6)             # en la misma posición de los sumándos de origen, en este caso la matriz resultado es:
+                        #   |2 4|
+                        #   |4 6|
 
 #   appEnd

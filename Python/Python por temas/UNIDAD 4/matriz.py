@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np 
 
 mat = np.array([4,8,2])
 print(mat)
