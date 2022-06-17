@@ -20,7 +20,8 @@ print(df2)
 #       (sep='|'): indica el separador de lectura, o escritura dependiendo del método de pandas respectivo
 #       (names= ['index']): indica los nombres de las columnas
 #       (index_col=['Nombre', 'Apellido']): se diferencia de los nombres de columna y sus indices es que los indices permiten acceder a los datos
-#       mientras que los nombres son indicativos visuales de las columnas
+#       mientras que los nombres son indicativos visuales de las columnas, los indices pueden verse como los ejes de un plano cartesiano, pues en base a estos es que 
+#       vamos a organizar la informacion de las demás columnas
 #       (skiprows=1): esto salta la cantidad de filas indicada desde la primera en adelante, en este caso salta la primera fila
 df3 = pd.read_csv('C:\\Users\\HP\\Downloads\\G20\\Python\\Python por temas\\UNIDAD 5\\ejemploCsv.csv', sep=',', names= ['index', 'Nombre', 'Apellido','Edad','Ventas1', 'Ventas2'], na_values=["?"], index_col=['Nombre', 'Apellido'], skiprows=1)
 print(df3)

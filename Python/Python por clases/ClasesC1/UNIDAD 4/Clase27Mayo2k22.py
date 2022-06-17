@@ -71,7 +71,7 @@ arreglo = np.array([[4,5,2],[4,5,8],[1,4,3]])
 print(arreglo)
 df0 = pd.DataFrame(arreglo)
 print(df0)
-# print(df0[1,2]) NO se puede acceder a los valores de un dataframe de la manera convencional, para esto usarelos los metodos loc e iloc
+# print(df0[1,2]) NO se puede acceder a los valores de un dataframe de la manera convencional, para esto usaremos los métodos loc e iloc
 df1 = pd.DataFrame(arreglo, columns=['María','Juan','Tomas'], index=['Enero', 'Febrero', 'Marzo'])
 print(df1)
 # métodos loc e iloc
