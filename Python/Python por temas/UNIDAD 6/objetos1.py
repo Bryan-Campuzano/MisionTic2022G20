@@ -1,10 +1,10 @@
 #Programación orientada a objetos Poo
-#Python es un lenguaje oreintado a objetos
+#Python es un lenguaje orientado a objetos
 #Casi todo en python es un objeto
 #Clase, es un modelo o patrón del cual se pueden crear múltiples objetos
 #Cuando se crea una clase, se definen propiedades o atributos y métodos o funciones
 #Hay que crear la clase, para poder crear los objetos
-#Cuano creamos un objeto, es lo mismo que decir crear una INSTANCIA de la clase 
+#Cuando creamos un objeto, es lo mismo que decir crear una INSTANCIA de la clase 
 from sklearn.feature_selection import SelectFdr
 
 
