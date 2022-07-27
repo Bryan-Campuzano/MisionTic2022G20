@@ -32,7 +32,7 @@ class Aplicacion:
         if self.selec3.get() == 1:
             Conta+=1
         self.lblMostrar['text'] = Conta                                                                                     # actualizamos la etiqueta con la cantidad de casillas seleccionadas actualmente
-    def cambiarEstado(self):                                                                                                # modelamos el metodo que cambia el estado del botón 'Contar' dependiendo del estado de la casilla 'Aceptar'
+    def cambiarEstado(self):                                                                                                # modelamos el método que cambia el estado del botón 'Contar' dependiendo del estado de la casilla 'Aceptar'
         if self.selec4.get() == 1:                                                                                          # dependiendo del estado de la variable asociada a la casilla (1 para marcada, 0 para desmarcada) le asigna un estado de habilitado o deshabilitado
             self.btnContar['state']= 'normal'
         if self.selec4.get() == 0:
