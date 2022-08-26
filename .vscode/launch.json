@@ -5,6 +5,12 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "Launch App",
+            "request": "launch",
+            "mainClass": "App"
+        },
+        {
             "name": "Python: Archivo actual",
             "type": "python",
             "request": "launch",
