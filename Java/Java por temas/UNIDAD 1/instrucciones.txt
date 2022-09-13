@@ -1,0 +1,59 @@
+NOTA DE INTERÉS:
+
+en esta ocasión el codigo desarrollado en clase no se pondrá de manera independiente a los apuntes porque
+la metodología de estudio de java consiste en tener un archivo e ir robusteciéndose al proceder de las clases
+agregando mas clases, codigo, y comentarios. por lo que esta sesión de clase, ademas de que este ciclo lo estoy haciendo
+asincronamente, esta sección de los apuntes se dedicará a albergar los PDFs de guía y material didáctico extra  
+
+LINKS DE INTERÉS:
+
+**  UNIDAD 1 **
+
+*   INSTALACIÓN KIT DE DESARROLLO
+    -   https://youtu.be/0Wn0yWwK20Q
+*   VSCODE PARA JAVA
+    -   https://youtu.be/g6TMxG1xTzU
+*   MAVEN
+    -   https://www.youtube.com/playlist?list=PLvimn1Ins-40atMWQkxD8r8pRyPLAU0iQ
+*   GIT
+    -   https://www.youtube.com/playlist?list=PLvimn1Ins-43-1sXQmGZPWLjNjPyGNi0R
+*   GitHub Y VSCODE
+    -   https://www.youtube.com/playlist?list=PLU8oAlHdN5BlyaPFiNQcV0xDqy0eR35aU
+
+**  UNIDAD 2 **
+
+*   LIBRO junit5
+    -   https://junit.org/junit5/docs/current/user-guide/ 
+*   CURSO junit5
+    -   https://www.youtube.com/playlist?list=PLsRPgBUE5BI68-h4MF0Y5FLSNwGdlIBK0 
+*   LAMBDA Y API STREAM EN JAVA
+    -   https://youtu.be/U5oOdNG2XQY
+
+**  UNIDAD 3 **
+
+*   DBEAVER
+    -   https://youtu.be/JkE1VFLHfTE
+*   BASE DE DATOS
+    -   https://www.youtube.com/playlist?list=PLs1sXiNvW4OyJCZs5WR3OjPZTlIqNcvQi
+
+**  UNIDAD 4 **
+
+*   LECTURA ARCHIVOS JAVA
+    -   https://youtu.be/etQN4EfYN7k
+*   ESTRUCTURA DE ARCHIVOS JAVA
+    -   https://youtu.be/E0H4OzW2_1Y
+*   CURSO JBDC
+    -   https://www.youtube.com/playlist?list=PLTd5ehIj0goMKGkcD6cB7enP0nnyYiEzw
+*   JPA BÁSICO
+    -   https://www.youtube.com/playlist?list=PLQxX2eiEaqbx-JlkcrMlq9zIPxTA82kzk
+*   JPA AVANZADO
+    -   https://www.youtube.com/playlist?list=PLvgzXOqVxIfH8ZSLxJLqQenOZw3T-IzUB 
+
+**  UNIDAD 5 **
+
+*   NETBEANS
+    -   https://youtu.be/0FG8__6aLRA
+*   JAVA GRÁFICO DESDE CERO
+    -    https://www.youtube.com/playlist?list=PLAzlSdU-KYwWtfcYGSWCKD9Hf1nuhBdrQ 
+*   JAVA DESDE CERO
+    -   https://www.youtube.com/playlist?list=PLU8oAlHdN5BktAXdEVCLUYzvDyqRQJ2lk 
