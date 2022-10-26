@@ -15,7 +15,8 @@
  *          desde manejo de clases hasta preferencias de terminología en el codigo
  *         
  *          carpeta 'lib': en esta carpeta se incluyen las librerías de uso local del programa, permite configurar de manera local los recursos específicos 
- *          usados en cada proyecto por separado aligerando el peso general de cada proyecto y previniendo incompatibilidades
+ *          usados en cada proyecto por separado aligerando el pe
+ * so general de cada proyecto y previniendo incompatibilidades
  *          
  *          carpeta 'src': en esta carpeta se cre   a el documento default '.Java' y se inicia el proceso de creación de codigo, en esta carpeta se tienen 
  *          los archivos de java que usaremos para modelar las clases o partes principales en las que fraccionaremos el programa principal 
@@ -93,10 +94,10 @@ public class App {
         String nombre = "Juan";
 
         System.out.println(nombre.getClass().getSimpleName());
-        
+        System.out.println(x);
+        System.out.println(variable);
         //  System.out.println(x.getClass().getSimpleName());   este métodos no es factible pues las clases primitivas no tienen métodos tan complejos,por lo que esto arroja un error que impide la ejecución 
         //  estos errores son conocido como errores lógicos, errores de mala implementación, uso o sencillamente sintaxis que no tiene sentido en este lenguaje
 
-        
     }
 }
