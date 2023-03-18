@@ -3,18 +3,18 @@
  */
 import java.util.Scanner;
 /**
- * CICLO 2: PROGRAMACIÓN BÁSICA EN JAVA
- * como venimos de una primera experiencia de programación usando el lenguaje de programación PYTHON, el aprender Java
- * no va a ser tan difícil como una primera experiencia, pues ya tenemos una experiencia asi sea minima en el proceso de programación 
- * no obstante, Java es un lenguaje sustancialmente diferente a python, tanto en forma como en fondo, lo cual, veremos a lo largo de este ciclo.
- * para empezar, la creación de proyectos:
+ *  CICLO 2: PROGRAMACIÓN BÁSICA EN JAVA
+ *  como venimos de una primera experiencia de programación usando el lenguaje de programación PYTHON, el aprender Java
+ *  no va a ser tan difícil como una primera experiencia, pues ya tenemos una experiencia asi sea minima en el proceso de programación 
+ *  no obstante, Java es un lenguaje sustancialmente diferente a python, tanto en forma como en fondo, lo cual, veremos a lo largo de este ciclo.
+ *  para empezar, la creación de proyectos:
  *      aunque  en java también se pueden crear archivos independientes y empezar a hacer codigo, lo mas común en este lenguaje es crear lo que
  *      se conoce como "carpeta de proyecto" o "Java project" una serie de carpetas y recursos que java crea para encapsular de manera organizada 
  *      todos los elementos que se necesitan para el desarrollo de un programa completo e independiente, lo que permite la compartimentalizar mejor 
  *      el flujo de trabajo y el multi-proyecto. el proyecto se compone de carpetas 3 default llamadas '.vscode' 'lib' y 'src' cada una destinada para
  *      una función especifica, aunque siempre se pueden generar 
  *      carpetas o sub-carpetas nuevas:
- * 
+ *  
  *          carpeta '.vscode': aquí se guardan archivos de configuración tipo 'json' que se encargar de configuraciones y preferencias locales que van 
  *          desde manejo de clases hasta preferencias de terminología en el codigo
  *         
@@ -23,13 +23,13 @@ import java.util.Scanner;
  *          
  *          carpeta 'src': en esta carpeta se cre   a el documento default '.Java' y se inicia el proceso de creación de codigo, en esta carpeta se tienen 
  *          los archivos de java que usaremos para modelar las clases o partes principales en las que fraccionaremos el programa principal 
- * 
- * los comentarios son parte fundamental del codigo. es un tipo de texto que no se ejecuta al momento de copilar y ejecutar el codigo, sirve para una mejor comprensión del codigo
- * el 'para qué' y el 'por qué' de las cosas. en general se usa para que cuando un programador externo o para recordar el funcionamiento del programa después, por si se
- * requiere añadir actualizaciones o correcciones: 
+ *  
+ *  los comentarios son parte fundamental del codigo. es un tipo de texto que no se ejecuta al momento de copilar y ejecutar el codigo, sirve para una mejor comprensión del codigo
+ *  el 'para qué' y el 'por qué' de las cosas. en general se usa para que cuando un programador externo o para recordar el funcionamiento del programa después, por si se
+ *  requiere añadir actualizaciones o correcciones: 
  *      existen varias formas de comentar en java, este comentario largo esta hecho en una convención llamada 'comentario de documentación' pero existen mas tipos 
  *      de comentarios:
- * 
+ *  
  *          comentario de documentación: es del tipo "/**" para abrir el comentario y "* /" (sin el espacio intermedio) para cerrar, este tipo de comentario sirve para 
  *          la generación de 'documentación' esto es un archivo de texto externo que copila y documenta todos los comentarios de este tipo para poder analizar el funcionamiento
  *          del codigo, los comentarios del desarrollador y su explicación de como funciona cada fragmento del codigo sin necesidad de recorrerlo en su totalidad. 
@@ -41,11 +41,11 @@ import java.util.Scanner;
  *      
  *          comentario de linea: es del tipo "//" y no se cierra, sirve para comentar una linea, para especificaciones concretas dentro del codigo, comentarios muy específicos de funcionamiento
  *          entre lineas. se le conoce como comentario de linea porque unicamente comprende el texto sobre la misma linea en el que se declara 
- */
+ */ 
 
 /**
  *  esto es un comentario de documentación
- */
+ */ 
 
 /*
  *  esto es un comentario de bloque
@@ -57,13 +57,13 @@ import java.util.Scanner;
  *  las clases en java, asi como en python representan aspectos fundamentales del programa, si por ejemplo, si en el programa se requiere modelar un cliente, con informacion personal, o 
  *  funciones especificas, se crean una clase especial para ello, esto obedece al paradigma de programación ya que se usan estas clases para modelar valores y métodos propios de cada objeto
  *  lo que permite la separación y la posterior asociación con otros objetos del programa en java los nombres de las clases se establecen con un orden de términos especifico, a esta acción la llamamos "declarar":
- * 
+ *  
  *          visibilidad: puede ser publica o package. en este caso que sea publica nos dice que todo lo que contiene esta clase, valores, constantes, métodos y atributos son visibles y accesibles desde
  *          otras clases o partes del proyecto, el privado oculta la visibilidad del elemento en cuestión de otras clases o partes del programa. por ejemplo, un método o atributo puede ser privado y
  *          unicamente accesible dentro de la clase a la que pertenece
- * 
+ *  
  *          NOTA: las clases no pueden ser privadas, pueden ser de tipo 'package' y se identifica unicamente con el nombre.
- * 
+ *  
  *          tipo: existen varios tipos de datos, métodos y objetos que contienen determinados métodos y valores predeterminados, estos son llamados "clases discretas" o "clases primitivas". clases propias 
  *          de java y que modelan el comportamiento del elemento o "instancia" que se genera. la clase "class" modela un tipo de objeto con atributos, métodos y demás elementos que específicos
  *          podemos entender los tipos y las instancias como un molde de galleta y una galleta respectivamente, el tipo define los limites y el como funciona, asi como un molde de galletas. y la instancia es
@@ -72,20 +72,20 @@ import java.util.Scanner;
  *          nombre: el nombre tiene una sintaxis especifica para las clases y es que tiene que tener la primera letra en mayúscula, si el nombre es compuesto por varias palabras, cada nueva palabra también 
  *          inicia en mayúscula, y no se pueden tener espacios, ejemplo: "ClientePrivado" la 'p' en privado va en mayúscula. para mayor informacion acerca de la sintaxis de los 'identificadores' puedes consultar el
  *          documento 'Lenguaje Java.pdf' para ver una explicación mas detallada de como escribir los nombres de clases.
- * 
+ *  
  *          corchetes: los corchetes, asi como la identacion en python, sirve para ayudar a la legibilidad del codigo, su organización y jerarquía, en este caso se escriben un par de corchetes después de la declaración
  *          de la clase y todo el codigo escrito dentro de este par de corchetes, pertenece a la clase. A esto se le conoce como '<bloque de codigo' ademas de pasar a una jerarquía inferior, el funcionamiento de los métodos es similar, esto se hace porque java no
  *          los espacios como caracteres que se pueden copilar, por lo que la identacion aunque puede servir para la legibilidad del codigo, no es necesario para la lógica
- */
-public class App {
+ */ 
+public class Clase23Junio2k22 {
     
 /**
  *  método principal de la Aplicacion, es el método que da inicio y fin a la lógica del programa 
- * 
+ *  
  *  @param args          elemento creado automáticamente al momento de generar documentación del método principal 'main' reúne todos los paramentos que necesita el método para funcionar.
  *  @throws Exception    elemento creado automáticamente que describe todos los elementos que 'lanza' o da como resultado el método, en este caso modela que si la lógica del programa llega a fallar, este método 'lanza' un mensaje de error
  *                       llamada excepción    
- */
+ */ 
     public static void main(String[] args) throws Exception {
         
         //  lo siguiente se conoce como sentencia, las sentencias son ordenes que se le indican al sistema y modelan el codigo en su nivel mas bajo, en java cada sentencia se finaliza con un punto y coma ";"
@@ -120,35 +120,36 @@ public class App {
 
 /**
  *  clase creada para el análisis de las entradas del sistema, esta clase se creara en el mismo documento con el fin de simplificar la cantidad de elementos del proyecto, pero hay que tener en cuenta que no es recomendable tener varias clases y métodos main en
- *  fichero de JAVA. por lo que hay que tener en cuenta que las clases se suelen manejar en ficheros separados. Un archivo .java puede tener más de una clase. La única condición es que sólo debe haber una clase public con el mismo nombre del archivo
- */
+ *  fichero de JAVA. por lo que hay que tener en cuenta que las clases se suelen manejar en ficheros separados. Un archivo .java puede tener más de una clase. La única condición es que sólo debe haber una clase public con el mismo nombre del archivo, al incluir varios
+ *  Main en el codigo, facilitamos la ejecución de bloques de codigo por separado, al ejecutar el fichero te despliega un menu (en VSCode) en el que te permite escoger que clase ejecutar
+ */ 
 class HolaQuien {
 
 /**
  *  método principal de la clase, aquí se modelan entradas de datos mediante consola
  *  @param args
  *  @throws Exception
- */
+ */ 
     public static void main(String[] args) throws Exception {
     
-        var sc = new Scanner(System.in);                       // creamos un nuevo escáner, un Scanner permite la captura de datos introducidos al sistema, y el parámetro 'System.in' permite la entrada de datos mediante consola 
-        System.out.println("Por favor ingrese su Nombre");  // modelamos un texto para indicar la entrada de informacion por terminal  
-        var nombre = sc.nextLine();                           // capturamos UNICAMENTE el texto introducido, sin indicativos de linea y espacios extras 
-        System.out.println("!hola " + nombre + "¡");          // imprimimos en consola el resultado de concatenar los strings del método, si introduzco la palabra 'Bryan' el resultado seria '!hola Bryan¡'
+        var sc = new Scanner(System.in);                        // creamos un nuevo escáner, un Scanner permite la captura de datos introducidos al sistema, y el parámetro 'System.in' permite la entrada de datos mediante consola 
+        System.out.println("Por favor ingrese su Nombre");    // modelamos un texto para indicar la entrada de informacion por terminal  
+        var nombre = sc.nextLine();                             // capturamos UNICAMENTE el texto introducido, sin indicativos de linea y espacios extras 
+        System.out.println("!hola " + nombre + "¡");            // imprimimos en consola el resultado de concatenar los strings del método, si introduzco la palabra 'Bryan' el resultado seria '!hola Bryan¡'
 
     }
 }
 
 /**
  *  clase creada para el estudio de las cadenas, manipulación y uso dentro del codigo en JAVA
- */
+ */ 
 class Cadena {
 
-    /**
-     * método principal de la clase
-     * @param args
-     * @throws Exception
-     */
+/**
+ *  método principal de la clase
+ *  @param args
+ *  @throws Exception
+ */ 
     public static void main(String[] args) throws Exception {
             
         String nombre = "juan";
@@ -167,11 +168,11 @@ class Cadena {
  */
 class Mate {
 
-    /**
-     * método principal de la clase
-     * @param args
-     * @throws Exception
-     */
+/**
+ * método principal de la clase
+ * @param args
+ * @throws Exception
+ */
     public static void main(String[] args) throws Exception {
         
         System.out.println(Math.E);                           // este método de 'Math' retorna el numero 'E'
@@ -187,36 +188,35 @@ class Mate {
  */
 class Control {
 
-        /**
-         * 
-         * @param args
-         * @throws Exception
-         */
-        public static void main(String[] args) throws Exception {
-            
-            
-        
-                String msg = "el caso seleccionado es el: ";
-                String resultado = "";
+/**
+ * en este caso usaremos la estructura 'if/else', esta estructura toma decisiones y dependiendo de las condiciones introducidas en el codigo. el 'if' evalúa la condición dada dentro de los paréntesis
+ * si esta condición es valida (arroje 'true' como respuesta de una comparación lógica) procederá a ejecutar el bloque de codigo contiguo. esta estructura va acompañada de un 'else', ya que siempre una
+ * estructura 'if/else' tiene que arrojar un resultado, 'else' sirve como punto de cierre de la estructura. en otras palabras la estructura evalúa 
+ * @param args
+ * @throws Exception
+ */
+    public static void main(String[] args) throws Exception {
+        // variables locales necesarias para la lógica del codigo
+        String msg = "el caso seleccionado es el: ";
+        String resultado = "";
+        // entradas dadas por el usuario
+        var scan = new Scanner(System.in); 
+        System.out.println("Por favor ingrese una opcion entre 1,2 y 3");
+        var caso = scan.nextLine();
 
-                var scan = new Scanner(System.in); 
-                System.out.println("Por favor ingrese una opcion entre 1,2 y 3");
-                var caso = scan.nextLine();
+        if(Integer.parseInt(caso) == 1){    // este primer caso se evalúa la entrada (convertida en entero con el método 'parseInt()') con el entero dado para ver si se puede ejecutar este bloque de codigo
+            resultado = msg + "primero";    // este es el bloque de codigo que se ejecuta si el primer caso se da como verdadero. la variable 'resultado' se actualiza y guarda el valor concatenado ('msg' y primero en este caso)
+            }
+            else if(Integer.parseInt(caso) == 2){   // en caso de no cumplirse la condición del primer caso, evaluamos si la condición de este segundo caso se cumple
+            resultado = msg + "segundo";            // segundo bloque de codigo
+            }
+            else if(Integer.parseInt(caso) == 3){   // tercer caso a evaluar, la estructura 'if/else' es ordenada, evalúa cada uno de los casos de forma ordenada
+            resultado = msg + "tercero";            // tercer bloque de codigo
+            }
+            else {                                  // bloque final de la estructura, ya que la estructura, obligatoriamente, tener un caso que de un resultado si todos los demás fallan para evitar errores
+            resultado = "introduzca un valor valido";   // este es el valor de la variable que toma cuando los demás fallan, o se introduce un valor no esperado en la estructura
+            }
 
-                if(Integer.parseInt(caso) == 1){
-                    resultado = msg + "primero";
-                }
-                else if(Integer.parseInt(caso) == 2){
-                    resultado = msg + "segundo";
-                }
-                else if(Integer.parseInt(caso) == 3){
-                    resultado = msg + "tercero";
-                }
-                else {
-                    resultado = "introduzca un valor valido";
-                }
-
-                System.out.println(resultado);       
-
+            System.out.println(resultado);          // retornamos en consola el resultado obtenido
     }
 }
